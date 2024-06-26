@@ -46,6 +46,21 @@ const Navbar = () => {
               Services
             </Link>
           </li>
+          <li className="list-none cursor-pointer">
+            <Link to="/" onClick={() => scrollToElement("ChooseUs")}>
+              Choose us
+            </Link>
+          </li>
+          <li className="list-none cursor-pointer">
+            <Link to="/" onClick={() => scrollToElement("values")}>
+              Values
+            </Link>
+          </li>
+          <li className="list-none cursor-pointer">
+            <Link to="/" onClick={() => scrollToElement("ourVision")}>
+              Our vision
+            </Link>
+          </li>
           <li
             style={{
               color: `${location.pathname === "/projects" ? "black" : "white"}`,

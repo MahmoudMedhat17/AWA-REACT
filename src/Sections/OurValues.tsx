@@ -34,7 +34,10 @@ const OurValues = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center mt-[2rem]">
+    <div
+      id="values"
+      className="flex flex-col justify-center items-center"
+    >
       <div>
         <h2 className="text-[24px] sm:text-[40px] font-medium mb-[1rem]">
           Our Values

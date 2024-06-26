@@ -18,21 +18,22 @@ interface IpopUpContent {
 }
 
 const Modal = ({ popUpContent }: IpopUpContent) => {
+
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button variant="outline">Edit Profile</Button>
       </DialogTrigger>
-      <DialogContent className="w-[100vw] h-[100vh] overflow-y-auto z-[100] p-[3rem]">
-        {popUpContent.imageUrls.map((imgUrl) => (
-          <div className="w-full">
-            <img src={imgUrl} />
-          </div>
-        ))}
-        <DialogTitle className="w-full text-[24px] uppercase">
+      <DialogContent className="h-[80vh] border-red-700 overflow-y-auto p-6">
+        <div className="flex flex-wrap">
+          {popUpContent.imageUrls.map((activeobj) => (
+            <img src={activeobj} className="w-[100px]" />
+          ))}
+        </div>
+        <DialogTitle className="w-full text-[#2D3E6A] text-[24px] uppercase">
           {popUpContent.title}
         </DialogTitle>
-        <DialogDescription className="w-full text-black text-[16px]">
+        <DialogDescription className="w-full text-[16px]">
           {popUpContent.description}
         </DialogDescription>
       </DialogContent>

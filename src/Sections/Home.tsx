@@ -35,6 +35,7 @@ const Home = () => {
   return (
     <div id="home">
       <Carousel
+        opts={{ loop: true }}
         plugins={[
           Autoplay({
             delay: 3000,

@@ -1,6 +1,7 @@
 const OurVision = () => {
   return (
     <div
+      id="ourVision"
       className="flex flex-col lg:flex-row lg:justify-between lg:items-center w-full h-fit lg:h-[1000px] bg-cover bg-center"
       style={{ backgroundImage: "url(images/vision-mission.jpg)" }}
     >

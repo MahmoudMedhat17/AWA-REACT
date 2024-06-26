@@ -15,6 +15,15 @@ const Footer = () => {
         <Link to="/" onClick={() => scrollToElement("services")}>
           <li>Services</li>
         </Link>
+        <Link to="/" onClick={() => scrollToElement("ChooseUs")}>
+          <li>Choose us</li>
+        </Link>
+        <Link to="/" onClick={() => scrollToElement("values")}>
+          <li>Values</li>
+        </Link>
+        <Link to="/" onClick={() => scrollToElement("ourVision")}>
+          <li>Our vision</li>
+        </Link>
         <Link
           to="/projects"
           onClick={() => {

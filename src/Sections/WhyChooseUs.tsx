@@ -2,7 +2,10 @@ import whyChooseUs from "../../public/images/why-choose-us.svg";
 
 const WhyChooseUs = () => {
   return (
-    <div className="my-[2rem] mx-[1rem] sm:my-[0rem] sm:mx-[0rem] p-0 sm:p-[1rem] lg:py-[5rem] lg:px-[1rem] xl:py-[5rem] xl:px-[8rem] flex justify-center items-start">
+    <div
+      id="ChooseUs"
+      className="my-[2rem] mx-[1rem] sm:my-[0rem] sm:mx-[0rem] p-0 sm:p-[1rem] lg:py-[5rem] lg:px-[1rem] xl:py-[5rem] xl:px-[8rem] flex justify-center items-start"
+    >
       <div className="w-[50%] sm:w-full md:w-[50%]">
         <h3 className="text-[#2D3E6A] text-[20px] sm:text-[24px] lg:text-[36px] xl:text-[40px] font-medium mb-[1.5rem]">
           Why Choose Us

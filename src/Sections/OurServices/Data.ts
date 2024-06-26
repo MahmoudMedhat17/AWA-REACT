@@ -56,4 +56,4 @@ export const iconsData: IiconsData[] = [
       imageUrls: ["/images/services/lowvoltage/lowvoltage-1.png"],
     },
   },
-];
+]
