@@ -1,8 +1,9 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu } from "react-ionicons";
 import { Close } from "react-ionicons";
 import scrollToElement from "@/util/scrollToElement";
+import useScrollHeight from "@/hooks/useScrollOpacity ";
 
 const Navbar = () => {
   const [dropDownMenu, setDropDownMenu] = useState<boolean>(false);
@@ -12,72 +13,35 @@ const Navbar = () => {
   const handleMenu = () => {
     setDropDownMenu(!dropDownMenu);
   };
-
-  const handleNavbar = () => {
-    if (navBarRef.current) {
-      if (window.scrollY > 400) {
-        navBarRef.current.style.backgroundColor = "rgb(203, 213, 225,1)";
-        // navBarRef.current.style.opacity = "1";
-      } else if (window.scrollY > 350) {
-        navBarRef.current.style.backgroundColor = "rgb(203, 213, 225,0.8)";
-        // navBarRef.current.style.opacity = "0.8";
-      } else if (window.scrollY > 300) {
-        navBarRef.current.style.backgroundColor = "rgb(203, 213, 225,0.6)";
-        // navBarRef.current.style.opacity = "0.6";
-      } else if (window.scrollY > 250) {
-        navBarRef.current.style.backgroundColor = "rgb(203, 213, 225,0.4)";
-        // navBarRef.current.style.opacity = "0.4";
-      } else if (window.scrollY > 200) {
-        navBarRef.current.style.backgroundColor = "rgb(203, 213, 225,0.2)";
-        // navBarRef.current.style.opacity = "0.2";
-      } else if (window.scrollY > 150) {
-        navBarRef.current.style.backgroundColor = "rgb(203, 213, 225,0)";
-        // navBarRef.current.style.opacity = "0";
-      }
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleNavbar);
-  }, []);
+  const scrollHeight = useScrollHeight();
 
   return (
     <nav
+      style={{ backgroundColor: `rgba(45,62,106,${scrollHeight})` }}
       ref={navBarRef}
-      className="fixed w-full flex justify-between items-center py-[1rem] px-[2rem] lg:py-[1rem] lg:px-[5rem] z-[99] transition-all duration-300"
+      className="fixed w-full flex justify-between items-center  px-[2rem]  z-50 transition-all duration-50"
     >
       <Link to="/" onClick={() => scrollToElement("home")}>
-        <img src="/images/awa-logo.png" className="w-[100px]" />
+        <img
+          src="/images/awa-logo.png"
+          className={`${
+            !(scrollHeight - 0.2) ? "w-[100px]" : "w-[60px]"
+          } duration-300`}
+        />
       </Link>
-      {/* WEB version*/}
-      <div className="hidden lg:flex justify-around text-white text-[18px] mb-[1rem]">
-        <ul className="flex">
-          <li
-            style={{
-              color: `${location.pathname === "/projects" ? "black" : "white"}`,
-            }}
-            className="list-none mr-[3rem] cursor-pointer"
-          >
+      <div className="hidden lg:flex justify-around text-white text-[18px] ">
+        <ul className="flex  gap-8 ">
+          <li className="list-none  cursor-pointer  ">
             <Link to="/" onClick={() => scrollToElement("home")}>
               Home
             </Link>
           </li>
-          <li
-            style={{
-              color: `${location.pathname === "/projects" ? "black" : "white"}`,
-            }}
-            className="list-none mr-[3rem] cursor-pointer"
-          >
+          <li className="list-none  cursor-pointer">
             <Link to="/" onClick={() => scrollToElement("aboutus")}>
               About Us
             </Link>
           </li>
-          <li
-            style={{
-              color: `${location.pathname === "/projects" ? "black" : "white"}`,
-            }}
-            className="list-none mr-[3rem] cursor-pointer"
-          >
+          <li className="list-none cursor-pointer">
             <Link to="/" onClick={() => scrollToElement("services")}>
               Services
             </Link>
@@ -86,16 +50,11 @@ const Navbar = () => {
             style={{
               color: `${location.pathname === "/projects" ? "black" : "white"}`,
             }}
-            className="list-none mr-[3rem] cursor-pointer"
+            className="list-none cursor-pointer"
           >
             <Link to="/projects">Projects</Link>
           </li>
-          <li
-            style={{
-              color: `${location.pathname === "/projects" ? "black" : "white"}`,
-            }}
-            className="list-none mr-[3rem] cursor-pointer"
-          >
+          <li className="list-none cursor-pointer">
             <Link to="/" onClick={() => scrollToElement("contactus")}>
               Contact Us
             </Link>
@@ -132,7 +91,7 @@ const Navbar = () => {
                   location.pathname === "/projects" ? "black" : "white"
                 }`,
               }}
-              className="list-none cursor-pointer my-2 p-4"
+              className="list-none cursor-pointer  p-4"
             >
               <Link to="/" onClick={() => scrollToElement("home")}>
                 Home
@@ -144,7 +103,7 @@ const Navbar = () => {
                   location.pathname === "/projects" ? "black" : "white"
                 }`,
               }}
-              className="list-none cursor-pointer my-2 p-4"
+              className="list-none cursor-pointer  p-4"
             >
               <Link to="/" onClick={() => scrollToElement("aboutus")}>
                 About Us
@@ -156,7 +115,7 @@ const Navbar = () => {
                   location.pathname === "/projects" ? "black" : "white"
                 }`,
               }}
-              className="list-none cursor-pointer my-2 p-4"
+              className="list-none cursor-pointer  p-4"
             >
               <Link to="/" onClick={() => scrollToElement("services")}>
                 Services
@@ -168,7 +127,7 @@ const Navbar = () => {
                   location.pathname === "/projects" ? "black" : "white"
                 }`,
               }}
-              className="list-none cursor-pointer my-2 p-4"
+              className="list-none cursor-pointer  p-4"
             >
               <Link to="/projects">Projects</Link>
             </li>
@@ -178,7 +137,7 @@ const Navbar = () => {
                   location.pathname === "/projects" ? "black" : "white"
                 }`,
               }}
-              className="list-none cursor-pointer my-2 p-4"
+              className="list-none cursor-pointer  p-4"
             >
               <Link to="/" onClick={() => scrollToElement("contactus")}>
                 Contact Us

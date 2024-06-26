@@ -1,5 +1,5 @@
 import HeroBanner from "@/components/HeroBanner/HeroBanner";
-import AwaRow from "@/components/HeroBanner/AwaRow";
+import CustomSlider from "@/components/HeroBanner/customSlider";
 import {
   Carousel,
   CarouselContent,
@@ -44,7 +44,7 @@ const Home = () => {
       >
         <CarouselContent>
           <CarouselItem>
-            <AwaRow />
+            <CustomSlider />
           </CarouselItem>
           {AwaData.map((value) => (
             <CarouselItem>

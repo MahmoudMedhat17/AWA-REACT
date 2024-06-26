@@ -1,12 +1,10 @@
 import scrollToElement from "@/util/scrollToElement";
 
-const AwaCol = () => {
+const DefaultSlider = () => {
   return (
     <div className="flex flex-col">
       <div className="text-center">
-        <p className="text-[80px] md:text-[128px] font-[prata,serif] mb-[1rem]">
-          AWA
-        </p>
+        <p className="text-[80px] md:text-[128px] font-[prata,serif] ">AWA</p>
       </div>
       <div className="text-[18px] md:text-[24px] font-medium text-center">
         <p className="mb-[1rem] uppercase opacity-[0.9]">
@@ -31,4 +29,4 @@ const AwaCol = () => {
   );
 };
 
-export default AwaCol;
+export default DefaultSlider;

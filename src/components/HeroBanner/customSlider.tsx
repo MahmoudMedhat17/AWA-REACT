@@ -1,14 +1,14 @@
 import scrollToElement from "@/util/scrollToElement";
 
-const AwaRow = () => {
+const CustomSlider = () => {
   return (
     <div
-      className="w-[100%] h-[100vh] bg-center bg-custom-size"
+      className="w-[100%] h-[100vh] bg-top bg-no-repeat "
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.116), transparent 100%),url(/images/BannerImgs/hero.png)`,
       }}
     >
-      <div className="flex flex-col justify-center items-center h-[100%] py-[2.5rem] px-0 lg:px-[1rem] xl:px-0">
+      <div className="flex flex-col justify-center items-center h-[100%] px-0 lg:px-[1rem] xl:px-0">
         <div className="flex flex-col md:flex-row justify-center items-center mt-[7rem] md:mb-[1rem]">
           <p className="text-[50px] md:text-[80px] lg:text-[128px] font-[prata,serif] mb-[1rem]">
             AWA
@@ -48,4 +48,4 @@ const AwaRow = () => {
   );
 };
 
-export default AwaRow;
+export default CustomSlider;
