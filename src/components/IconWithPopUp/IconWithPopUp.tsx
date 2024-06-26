@@ -19,7 +19,7 @@ const IconWithPopUp = ({ iconImageUrl, popUpContent }: Iprops) => {
         <p>{popUpContent.title}</p>
       </div>
       {/* <Modal /> */}
-      <Modal popUpContent={popUpContent} />
+      <Modal />
     </div>
   );
 };
