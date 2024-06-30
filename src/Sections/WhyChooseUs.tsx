@@ -34,7 +34,7 @@ const WhyChooseUs = () => {
           <li>Operator training</li>
         </ul>
       </div>
-      <div className="w-[50%] sm:w-full md:w-[50%] block">
+      <div className="w-[50%] sm:w-full md:w-[50%] block xl:ml-16">
         <img src={whyChooseUs} className="max-w-[100%] h-auto" />
       </div>
     </div>

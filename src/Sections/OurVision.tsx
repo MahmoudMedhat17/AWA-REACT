@@ -18,7 +18,7 @@ const OurVision = () => {
           </p>
         </div>
         {/* Our Mission */}
-        <div className="p-[2rem] lg:w-[50%] xl:max-w-[40%] lg:border-2 lg:border-white lg:rounded-lg backdrop-blur-[10px]">
+        <div className="p-[2rem] xl:ml-24 lg:w-[50%] xl:max-w-[40%] lg:border-2 lg:border-white lg:rounded-lg backdrop-blur-[10px]">
           <h3 className="text-[#2D3E6A] text-[25px] lg:text-[28px] font-semibold mb-[1rem]">
             Our Mission
           </h3>

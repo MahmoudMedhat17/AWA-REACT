@@ -9,7 +9,7 @@ const CustomSlider = () => {
       }}
     >
       <div className="flex flex-col justify-center items-center h-[100%] px-0 lg:px-[1rem] xl:px-0">
-        <div className="flex flex-col md:flex-row justify-center items-center mt-[7rem] md:mb-[1rem]">
+        <div className="flex flex-col md:flex-row justify-center items-center pt-20 md:mb-[1rem]">
           <p className="text-[50px] md:text-[80px] lg:text-[128px] font-[prata,serif] mb-[1rem]">
             AWA
           </p>

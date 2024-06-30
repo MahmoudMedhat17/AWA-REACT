@@ -1,5 +1,6 @@
-import { iconsData } from "./Data.ts";
+// import { iconsData } from "./Data.ts";
 import IconWithPopUp from "@/components/IconWithPopUp/IconWithPopUp.tsx";
+import { modalContent } from "./Data.ts";
 
 const OurServices = () => {
   return (
@@ -19,13 +20,14 @@ const OurServices = () => {
           for any specific requirements
         </p>
       </div>
-      <div className="flex justify-center items-center gap-[2rem] flex-wrap lg:flex-nowrap cursor-pointer">
-        {iconsData.map((icon) => (
+      <div className="w-[80%] flex justify-center items-center gap-[2rem] flex-wrap cursor-pointer">
+        {modalContent.map((icon) => (
           <div key={icon.id}>
             <div className="flex flex-col items-center">
               <IconWithPopUp
                 iconImageUrl={icon.iconImageUrl}
-                popUpContent={icon.popupContent}
+                iconTitle={icon.title}
+                iconId={icon.id}
               />
             </div>
           </div>

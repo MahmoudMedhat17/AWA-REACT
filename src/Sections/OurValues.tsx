@@ -1,9 +1,3 @@
-import value1 from "../../public/images/Value-1.png";
-import value2 from "../../public/images/Value-2.png";
-import value3 from "../../public/images/Value-3.png";
-import value4 from "../../public/images/Value-4.png";
-import value5 from "../../public/images/Value-5.png";
-
 interface ImagesData {
   id: number;
   imageUrl: string;
@@ -13,31 +7,28 @@ const OurValues = () => {
   const ImgsData: ImagesData[] = [
     {
       id: 1,
-      imageUrl: value1,
+      imageUrl: "/images/Value-1.png",
     },
     {
       id: 2,
-      imageUrl: value2,
+      imageUrl: "/images/Value-2.png",
     },
     {
       id: 3,
-      imageUrl: value3,
+      imageUrl: "/images/Value-3.png",
     },
     {
       id: 4,
-      imageUrl: value4,
+      imageUrl: "/images/Value-4.png",
     },
     {
       id: 5,
-      imageUrl: value5,
+      imageUrl: "/images/Value-5.png",
     },
   ];
 
   return (
-    <div
-      id="values"
-      className="flex flex-col justify-center items-center"
-    >
+    <div id="values" className="flex flex-col justify-center items-center">
       <div>
         <h2 className="text-[24px] sm:text-[40px] font-medium mb-[1rem]">
           Our Values

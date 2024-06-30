@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav
       style={{ backgroundColor: `rgba(45,62,106,${scrollHeight})` }}
       ref={navBarRef}
-      className="fixed w-full flex justify-between items-center  px-[2rem]  z-50 transition-all duration-50"
+      className="fixed w-full flex justify-between items-center px-8 z-50 transition-all duration-50"
     >
       <Link to="/" onClick={() => scrollToElement("home")}>
         <img
@@ -30,7 +30,7 @@ const Navbar = () => {
         />
       </Link>
       <div className="hidden lg:flex justify-around text-white text-[18px] ">
-        <ul className="flex  gap-8 ">
+        <ul className="flex gap-8 ">
           <li className="list-none  cursor-pointer  ">
             <Link to="/" onClick={() => scrollToElement("home")}>
               Home

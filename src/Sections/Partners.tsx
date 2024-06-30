@@ -106,13 +106,13 @@ const Partners = () => {
   ];
 
   return (
-    <div className="py-[2rem] bg-white flex flex-col justify-center items-center">
+    <div className="py-8 bg-white flex flex-col justify-center items-center">
       <div>
         <h2 className="text-[#2D3E6A] text-[24px] sm:text-[40px] font-medium">
           SOME OF OUR PARTNERS
         </h2>
       </div>
-      <div className="py-[5rem] px-[2rem]">
+      <div className="py-20 px-8">
         <Carousel
           opts={{
             align: "start",
