@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Sections/Home";
 import Navbar from "./components/Navbar/Navbar";
 import AboutUs from "./Sections/AboutUs";
-import OurServices from "./Sections/OurServices/OurServices";
 import WhyChooseUs from "./Sections/WhyChooseUs";
 import OurValues from "./Sections/OurValues";
 import SuccesPartners from "./Sections/SuccesPartners";
@@ -12,6 +11,7 @@ import ContactUs from "./Sections/ContactUs";
 import Footer from "./Sections/Footer";
 import Projects from "./Sections/Projects";
 import "./App.css";
+import Services from "./components/testing/services";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <Home />
       <AboutUs />
-      <OurServices />
+      <Services />
       <WhyChooseUs />
       <OurValues />
       <SuccesPartners />
