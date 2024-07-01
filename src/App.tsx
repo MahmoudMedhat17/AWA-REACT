@@ -17,17 +17,24 @@ function App() {
   return (
     <div className="relative">
       <Navbar />
-      <Home />
-      <AboutUs />
-      <Services />
-      <WhyChooseUs />
-      <OurValues />
-      <SuccesPartners />
-      <OurVision />
-      <Partners />
-      <ContactUs />
-      <Footer />
       <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <AboutUs />
+              <Services />
+              <WhyChooseUs />
+              <OurValues />
+              <SuccesPartners />
+              <OurVision />
+              <Partners />
+              <ContactUs />
+              <Footer />
+            </>
+          }
+        />
         <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>

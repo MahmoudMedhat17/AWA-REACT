@@ -3,6 +3,8 @@ import phone2 from "../../public/icons/phone-2.svg";
 import site from "../../public/icons/globe.svg";
 import location from "../../public/icons/marker-pin.svg";
 
+import { ContactUsForm } from "@/components/contactus-form";
+
 const ContactUs = () => {
   return (
     <div
@@ -45,21 +47,7 @@ const ContactUs = () => {
         <h3 className="text-[#2D3E6A] text-[25px] font-medium mb-[0.5rem] lg:mb-[4rem]">
           Get In Touch
         </h3>
-        <form className="flex flex-col">
-          <input
-            className="bg-transparent border-0 border-b-2 border-b-[#2D3E6A] my-[1rem]"
-            type="text"
-            placeholder="Your E-mail"
-          />
-          <input
-            className="bg-transparent border-0 border-b-2 border-b-[#2D3E6A] my-[1rem]"
-            type="text"
-            placeholder="Write us a message"
-          />
-        </form>
-        <button className="mt-[2rem] py-[0.5rem] w-full text-[#4D7F3E] text-[18px] font-semibold border-2 border-[#4D7F3E] rounded-lg hover:bg-[#4D7F3E] hover:text-white duration-300">
-          Contact Us
-        </button>
+        <ContactUsForm />
       </div>
     </div>
   );
