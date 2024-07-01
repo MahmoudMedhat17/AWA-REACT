@@ -22,11 +22,11 @@ const ServiceDialog = ({ item }: IServiceDialogProps) => {
       <DialogTrigger>
         <ServicesIcon img={item.iconImage} title={item.title} />
       </DialogTrigger>
-      <DialogContent className="h-[80vh] w-[80vw] flex flex-col md:flex-row items-center md:justify-center overflow-auto gap-8">
-        <div className="w-full md:w-[50%] max-w-[300px]">
+      <DialogContent className="h-[80vh] w-[80vw] flex flex-col md:flex-row items-center lg:justify-center overflow-auto gap-8">
+        <div className="max-w-[300px] sm:max-w-[400px] md:max-w-[300px]">
           <img src={item.image} />
         </div>
-        <div className="w-full md:w-[50%]">
+        <div className="w-full md:w-[400px] h-full">
           <DialogTitle className="text-[#2D3E6A] text-xl md:text-2xl lg:text-3xl py-4 uppercase">
             {item.title}
           </DialogTitle>

@@ -112,7 +112,7 @@ export const fireFightingContent = {
     {
       img: "/images/services/firefighting/firefighting-1.png",
       title: "FIRE FIGHTING",
-      des: "AWA, provides intruder detection systems for Commercial or Government Organizations and has many years of Experience in installing and servicing all types of Security Alarm systems. and firefightImagel  product s fireFighting e fireFighting d  by the company, are thoroughly tested by our technicians with regard to their features and in particular, to reliability. AWA, systems range from simple and easy to use general security systems, to some of the most complex system in Australia.  The addition of Back-to-Base central monitoring for offices and factories means your premises is always being watched. AWA, also install major systems utilizing various technologies such as Video Motion Detection, Perimeter Protection and Closed Circuit television equipment.",
+      des: "AWA, provides intruder detection systems for Commercial or Government Organizations and has many years of Experience in installing and servicing all types of Security Alarm systems. and firefighting all products, prior to being supported by the company, are thoroughly tested by our technicians with regard to their features and in particular, to reliability. AWA, systems range from simple and easy to use general security systems, to some of the most complex system in Australia.  The addition of Back-to-Base central monitoring for offices and factories means your premises is always being watched. AWA, also install major systems utilizing various technologies such as Video Motion Detection, Perimeter Protection and Closed Circuit television equipment. ",
     },
     {
       img: "/images/services/firefighting/firefighting-2.png",
@@ -129,7 +129,8 @@ export const fireFightingContent = {
         "UL/FM – pressure relief valve.",
         "UL/FM – 6 O.S. &Y. gate valves.",
         "UL/FM – 6 non return valves.",
-        "Suction and discharge manifolds.250 G PM– 1250 GPM available.UL / FM."]
+        "Suction and discharge manifolds.250 G PM– 1250 GPM available.UL / FM."
+      ]
     },
     {
       img: "/images/services/firefighting/firefighting-3.png",
@@ -149,3 +150,70 @@ export const fireFightingContent = {
   ],
 };
 
+
+
+// { }
+// {
+//   iconImage: "/images/services/firefighting.png",
+//     title: "Fire fighting",
+//       content: [
+//         {
+//           img: "/images/services/firefighting/firefighting-1.png",
+//           title: "FIRE FIGHTING",
+//           des: "AWA, provides intruder detection systems for Commercial or Government Organizations and has many yearsof Experience in installing and servicing all types of Security Alarm systems. and firefightImagel  product s fireFighting e fireFighting d  by the company, are thoroughly tested by our technicians with regard to their features and in particular, to reliability. AWA, systems range from simple and easy to use general security systems, to some of the most complex system in Australia.  The addition of Back-to-Base central monitoring for offices and factories means your premises is always being watched. AWA, also install major systems utilizing various technologies such as Video Motion Detection, Perimeter Protection and Closed Circuit television equipment.",
+//         }
+//       ]
+// },
+// {
+//   content: [
+//     {
+//       img: "/images/services/firefighting/firefighting-2.png",
+//       title: "UL / FM – Fire Pump Skid as per NFPA 20 Consists of:",
+//       list: [
+//         "500 gpm-8 bars. UL/FM Electric driven fire pump.",
+//         "500 gpm-8 bars. UL/FM diesel driven fire pump.",
+//         "25 gpm-9 bars. Vertical turbine jockey pump.",
+//         "UL/FM – star/delta electric fire pump controller.",
+//         "UL/FM diesel fire pump controller.",
+//         "UL – jockey pump controller.",
+//         "UL – single diesel tank.",
+//         "FM – water flow meter.",
+//         "SS- sensing lines for 3-pumps.",
+//         "UL/FM – pressure relief valve.",
+//         "UL/FM – 6 O.S. &Y. gate valves.",
+//         "UL/FM – 6 non return valves.",
+//         "Suction and discharge manifolds.250 G PM– 1250 GPM available.UL / FM."
+//       ]
+//     }
+//   ]
+// },
+// {
+//   content: [
+//     {
+//       img: "/images/services/firefighting/firefighting-3.png",
+//       title: "Fire suppression clean agent system: FM200",
+//       description: "The CO2 extinguisher system FM 200 is a non-conductive carbon dioxide fire extinguisher that is commonly used to put out Class A, B, and C fires.  The system is effective against various types of Fuels, Oils, Greases, and Electrical fires.  CO2 extinguishers are an effective way to extinguish fires because they cool the fuel, rendering it unignitable . They are lightweight and easy to use, making them ideal for various applications, including high-risk environments. CO2 extinguisher systems also have a long lifespan, require minimal maintenance, and are easily recharged",
+
+//     }
+//   ]
+// },
+// {
+//   content: [
+//     {
+//       img: "/images/services/firefighting/firefighting-4.png",
+//       title: "Fire suppression system: Co2",
+//       description: "CO2 extinguisher system is a fire suppression system designed to put out Class A and Class B fires, as well as electrical fires.It works by discharging carbon dioxide, a non- conductive and non - flammable gas, which suffocates the fire and removes the oxygen needed for combustion.CO2 extinguishers are commonly found in areas where electrical equipment and flammable materials are present, such as computer rooms, laboratories, and industrial settings.",
+
+//     }
+//   ]
+// },
+// {
+//   content: [
+//     {
+//       img: "/images/services/firefighting/firefighting-5.png",
+//       title: "Fire suppression clean agent system : NOVEC",
+//       description: "Novec 1230 fluid is known as a fluorinated ketone and is manufactured by 3M.Novec 1230 fluid has low toxicity and has a boiling point of 49 degrees C and therefore exists as a liquid at room temperature.It is therefore available to protect most hazards traditionally protected with halon 1301 and will be particularly important in Marine applications and others where high margins of safety and long-term sustainability are considered to be important features.Despite having a low boiling point, Novec 1230 fluid is able to be effectively vaporized over a wide range of hazard temperatures.Features:Zero ozone depleting potentialNegligible global warming potentialAtmospheric lifetime of less than 5 daysSafe for use in occupied areasRequires minimal storage space",
+//     }
+//   ]
+// }
+// ];

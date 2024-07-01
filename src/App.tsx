@@ -11,7 +11,7 @@ import ContactUs from "./Sections/ContactUs";
 import Footer from "./Sections/Footer";
 import Projects from "./Sections/Projects";
 import "./App.css";
-import Services from "./components/testing/services";
+import Services from "./components/testing copy/services";
 
 function App() {
   return (

@@ -3,27 +3,42 @@ import scrollToElement from "@/util/scrollToElement";
 
 const Footer = () => {
   return (
-    <div className="bg-[#2D3E6A] text-[#E1E1E1] py-[3rem] flex flex-col justify-center items-center gap-[2rem]">
+    <div className="bg-[#2D3E6A] text-[#E1E1E1] py-12 flex flex-col justify-center items-center gap-8">
       {/* Footer contents*/}
-      <ul className="flex m-[5px] gap-[1rem] sm:gap-[1.5rem] text-[0.8rem] sm:text-[1.1rem] sm:font-semibold">
-        <Link to="/" onClick={() => scrollToElement("home")}>
-          <li>Home</li>
-        </Link>
-        <Link to="/" onClick={() => scrollToElement("aboutus")}>
-          <li>About Us</li>
-        </Link>
-        <Link to="/" onClick={() => scrollToElement("services")}>
-          <li>Services</li>
-        </Link>
-        <Link to="/" onClick={() => scrollToElement("ChooseUs")}>
-          <li>Choose us</li>
-        </Link>
-        <Link to="/" onClick={() => scrollToElement("values")}>
-          <li>Values</li>
-        </Link>
-        <Link to="/" onClick={() => scrollToElement("ourVision")}>
-          <li>Our vision</li>
-        </Link>
+      <ul className="flex flex-wrap justify-center m-[5px] gap-[1rem] sm:gap-[1.5rem] text-[0.8rem] sm:text-[1.1rem] sm:font-semibold">
+        <li className="cursor-pointer" onClick={() => scrollToElement("home")}>
+          Home
+        </li>
+        <li
+          className="cursor-pointer"
+          onClick={() => scrollToElement("aboutus")}
+        >
+          About Us
+        </li>
+        <li
+          className="cursor-pointer"
+          onClick={() => scrollToElement("services")}
+        >
+          Services
+        </li>
+        <li
+          className="cursor-pointer"
+          onClick={() => scrollToElement("ChooseUs")}
+        >
+          Choose us
+        </li>
+        <li
+          className="cursor-pointer"
+          onClick={() => scrollToElement("values")}
+        >
+          Values
+        </li>
+        <li
+          className="cursor-pointer"
+          onClick={() => scrollToElement("ourVision")}
+        >
+          Our vision
+        </li>
         <Link
           to="/projects"
           onClick={() => {

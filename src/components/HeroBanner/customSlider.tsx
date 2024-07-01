@@ -29,7 +29,7 @@ const CustomSlider = () => {
           <p className="mb-[1rem] uppercase opacity-[0.9]">
             MEP-Low Current <br /> for contracting & trading{" "}
           </p>
-          <p className="mb-[1rem] text-black">SINCE 2015</p>
+          <p className="mb-[1rem] opacity-[0.9]">SINCE 2015</p>
         </div>
         <div className="mt-[2rem] flex justify-center items-center gap-[3rem] text-center">
           <button

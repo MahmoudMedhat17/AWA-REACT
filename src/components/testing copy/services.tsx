@@ -21,9 +21,8 @@ const Services = () => {
           for any specific requirements
         </p>
       </div>
-      <div className=" flex justify-center items-center gap-[2rem] flex-wrap cursor-pointer">
+      <div className="flex justify-center items-center flex-wrap gap-8">
         <FireDialog item={fireFightingContent} />
-
         {modalContent.map((item) => (
           <ServiceDialog item={item} />
         ))}

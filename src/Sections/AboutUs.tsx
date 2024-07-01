@@ -9,10 +9,7 @@ const AboutUs = () => {
 
   return (
     // MAIN DIV
-    <div
-      id="aboutus"
-      className="p-[5rem] max-sm:p-0 sm:max-md:p-[3rem] flex justify-center items-center"
-    >
+    <div id="aboutus" className="p-0 md:p-12 flex justify-center items-center">
       {/* IMGS DIV */}
       <div className="hidden sm:flex flex-col justify-center items-center m-[2.5rem] w-[30%] sm:max-lg:w-[50%]">
         <img
