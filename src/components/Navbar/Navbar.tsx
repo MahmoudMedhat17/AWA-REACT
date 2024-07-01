@@ -85,20 +85,20 @@ const Navbar = () => {
               height={"30px"}
               width={"30px"}
               onClick={handleMenu}
-              color={"black"}
+              color={"white"}
             />
           ) : (
             <Menu
               height={"30px"}
               width={"30px"}
               onClick={handleMenu}
-              color={"black"}
+              color={"white"}
             />
           )}
         </div>
         {dropDownMenu && (
           <ul
-            className={`flex flex-col items-center absolute w-[60%] top-[70%] right-0.5 rounded-md bg-[#ffffff80]`}
+            className={`flex flex-col items-center absolute w-[200px] top-[70%] right-0.5 rounded-md bg-[#2d3e6a]`}
           >
             <li
               style={{
